@@ -1,0 +1,114 @@
+/* General Style */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1000px; 
+    margin: 0 auto; 
+    float: none; 
+}
+
+/* Responsive */
+@media only screen and (max-width: 900px) {
+    .container {
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+}
+
+/* Nav */
+#nav {
+    max-width: 1300px; 
+    margin: 0 auto;
+    margin-top: 15px; 
+}
+
+/* Responsive */
+@media only screen and (max-width: 900px) {
+    #nav {
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+}
+
+
+/* Form */
+#userlogin {
+    background: #0C5E4F;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.46);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    height: 400px;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    padding-bottom: 40px;
+}
+
+#login input{
+    background: rgba(217, 217, 217, 0.53);
+    border-radius: 10px;
+    border: none;
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+    color: white;
+    padding-left: 10px;
+}
+
+#login input:focus {
+    outline: none;
+}
+
+#login input:valid{
+    background: rgba(217, 217, 217, 0.53);
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+}
+
+#login input::placeholder{
+    padding-left: 10px;
+    color: white; 
+}
+
+#login input[type=submit]{
+    background: #2D4365;
+    border-radius: 10px;
+    border: none;
+    width: 250px;
+    height: 50px;
+    color:white;
+}
+
+#login input[type=submit]:hover{
+    background: #2D4365;
+    border-radius: 10px;
+    border: none;
+    color:white;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media only screen and (max-width: 900px) {
+    #userlogin {
+      padding: 10px;
+      width: 350px;
+    }
+
+    #login input{
+        width: 200px;
+    }
+
+    #login input[type=submit]{
+        width: 200px;
+    }
+}

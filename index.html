@@ -4,21 +4,39 @@
         <title>Guard Center</title>
         <meta name="viewport" content="width=device-width">
         <script src="index.js"></script>
-        <link rel="stylescreen" href="style.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <!-- Testing form -->
-        <form id="login" onsubmit="formLogin(); return false;" method="post">
-            <input type="text" name="username" id="username" required>
-            <input type="password" name="password" id="pass" required>
-            <input type="submit" value="Submit">
-        </form>
-
-        <!-- Testing if something will display -->
-        <div id="output" style="display: none;">
-            <h1>Hello</h1>
+        <div id="nav">
+            <img src="logo.png" alt="Guard Center logo" height="100px" width="300px">
         </div>
 
+        <div class="container">
+            <div id="userlogin">
+                <form id="login" onsubmit="formLogin(); return false;" method="post" autocomplete="off">
+                    <h1 style="color: white; font-size: 40px">Guard Login</h1>
+                    <p style="opacity: 75%; color: white">Login to log numbers and see guard information.</p>
+                    <input type="text" name="username" id="username" placeholder="Username" required>
+                    <br><br>
+                    <input type="password" name="password" id="pass" placeholder="Password" required>
+                    <br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+            <!-- Testing if something will display -->
+            <div id="output" style="display: none;">
+                <h1>Test</h1>
+            </div>
+        </div>
     </body>
 </html>
+<!-- 
+TO Do: 
+-algin content in div
+-padding of placeholder 
+-size of submit text -->
