@@ -11,32 +11,81 @@
     </head>
 
     <body>
-        <div id="nav">
-            <img src="logo.png" alt="Guard Center logo" height="100px" width="300px">
-        </div>
-
-        <div class="container">
-            <div id="userlogin">
-                <form id="login" onsubmit="formLogin(); return false;" method="post" autocomplete="off">
-                    <h1 style="color: white; font-size: 40px">Guard Login</h1>
-                    <p style="opacity: 75%; color: white">Login to log numbers and see guard information.</p>
-                    <input type="text" name="username" id="username" placeholder="Username" required>
-                    <br><br>
-                    <input type="password" name="password" id="pass" placeholder="Password" required>
-                    <br><br>
-                    <input type="submit" value="Submit">
-                </form>
+        <div id="initalStage">
+            <div id="nav">
+                <img src="logo.png" alt="Guard Center logo" height="100px" width="300px">
             </div>
 
-            <!-- Testing if something will display -->
-            <div id="output" style="display: none;">
-                <h1>Test</h1>
+            <div class="container">
+                <div id="userlogin">
+                    <form id="login" onsubmit="formLogin(); return false;" method="post" autocomplete="off">
+                        <h1 style="color: white; font-size: 40px">Guard Login</h1>
+                        <p style="opacity: 75%; color: white">Login to log numbers and see guard information.</p>
+                        <input type="text" name="username" id="username" placeholder="Username" required>
+                        <br><br>
+                        <input type="password" name="password" id="pass" placeholder="Password" required>
+                        <br><br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
             </div>
         </div>
+
+            <!-- Doesn't display until user logins in -->
+            <div id="maincontent" style="display: none;">
+                <div id="nav">
+                    <img src="logo.png" alt="Guard Center logo" height="100px" width="300px" style="float: left; white-space: pre;">
+                    <div id="responsivenav">
+                        <a href="">Updates</a>
+                        <a href="">Leadership</a>
+                        <a href="">Policies</a>
+                        <a href="">Registration</a>
+                        <a href="#numbertracking">Number Tracking</a>
+                    </div>
+                </div>
+
+                <br><br><br><br>
+
+                <div class="container" >
+                    <div id="main">
+                        <div id="numbertracking">
+                            <h1>Number Tracking</h1>
+                            <form id="numberform" onsubmit="formNumbers(); return false;" method="post" autocomplete="off">
+                                <input type="date" name="date" id="date" placeholder="Date" required>&nbsp; 
+                                <select name="time" id="time" required>
+                                    <option value="11">11:00</option>
+                                    <option value="1130">11:30</option>
+                                    <option value="12">12:00</option>
+                                    <option value="1230">12:30</option>
+                                    <option value="1">1:00</option>
+                                    <option value="13">1:30</option>
+                                    <option value="2">2:00</option>
+                                    <option value="23">2:30</option>
+                                    <option value="3">3:00</option>
+                                    <option value="33">3:30</option>
+                                    <option value="4">4:00</option>
+                                    <option value="43">4:30</option>
+                                    <option value="5">5:00</option>
+                                    <option value="53">5:30</option>
+                                </select>&nbsp; 
+                                <input type="text" name="pool" id="pool" placeholder="Pool" required>
+                                <br><br>
+                                <input type="text" name="lake" id="lake" placeholder="Lodge Lake" required>&nbsp; 
+                                <input type="text" name="beach" id="beach" placeholder="Beach" required>&nbsp; 
+                                <input type="submit" value="Submit">
+                            </form>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
     </body>
 </html>
-<!-- 
-TO Do: 
--algin content in div
--padding of placeholder 
--size of submit text -->
+
+<!-- To Do: 
+-design of hub
+-start building form 
+-test logic of form 
+-->

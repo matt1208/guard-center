@@ -21,13 +21,13 @@ body {
 
 /* Nav */
 #nav {
-    max-width: 1300px; 
+    max-width: 1400px; 
     margin: 0 auto;
     margin-top: 15px; 
 }
 
 /* Responsive */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
     #nav {
       margin-left: 25px;
       margin-right: 25px;
@@ -110,5 +110,143 @@ body {
 
     #login input[type=submit]{
         width: 200px;
+    }
+}
+
+/* Main */
+/* Nav */
+#responsivenav {
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+#responsivenav a {
+    float: right;
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 950px) {
+    #responsivenav a {
+        display: none;
+    }
+}
+
+/* Number Tracking */
+
+#numbertracking {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+#numberform input{
+    background: white;
+    border-radius: 10px;
+    border: none;
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.75);;
+    padding-left: 10px;
+    border: 2px solid #000000;
+}
+
+#numberform select{
+    background: white;
+    border-radius: 10px;
+    border: none;
+    width: 250px;
+    height: 55px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.75);;
+    padding-left: 10px;
+    border: 2px solid #000000;
+}
+
+#numberform input:focus {
+    outline: none;
+}
+
+#numberform input:valid{
+    background: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+}
+
+#numberform input::placeholder{
+    padding-left: 10px;
+    color: rgba(0, 0, 0, 0.75);; 
+}
+
+#numberform input[type=submit]{
+    background: #2D4365;
+    border-radius: 10px;
+    border: none;
+    width: 250px;
+    height: 55px;
+    color:white;
+}
+
+#numberform input[type=submit]:hover{
+    background: #2D4365;
+    border-radius: 10px;
+    border: none;
+    color:white;
+    cursor: pointer;
+}
+
+#date {
+    margin-right: 10px
+}
+
+#time {
+    margin-right: 10px
+}
+
+#lake {
+    margin-right: 10px
+}
+
+#beach {
+    margin-right: 10px
+}
+
+/* Responsive */
+@media only screen and (max-width: 950px) {
+    #numbertracking {
+        margin-top: 20px;
+    }
+
+    #date {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    #time {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    #pool {
+        margin-bottom: -5px;
+    }
+
+    #lake {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    #beach  {
+        margin-right: 0;
+        margin-bottom: 15px;
     }
 }
