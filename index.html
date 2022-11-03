@@ -50,28 +50,28 @@
                     <div id="main">
                         <div id="numbertracking">
                             <h1>Number Tracking</h1>
-                            <form id="numberform" onsubmit="formNumbers(); return false;" method="post" autocomplete="off">
-                                <input type="date" name="date" id="date" placeholder="Date" required>&nbsp; 
-                                <select name="time" id="time" required>
-                                    <option value="11">11:00</option>
-                                    <option value="1130">11:30</option>
-                                    <option value="12">12:00</option>
-                                    <option value="1230">12:30</option>
-                                    <option value="1">1:00</option>
-                                    <option value="13">1:30</option>
-                                    <option value="2">2:00</option>
-                                    <option value="23">2:30</option>
-                                    <option value="3">3:00</option>
-                                    <option value="33">3:30</option>
-                                    <option value="4">4:00</option>
-                                    <option value="43">4:30</option>
-                                    <option value="5">5:00</option>
-                                    <option value="53">5:30</option>
+                            <form id="numberform" method="POST" action="https://script.google.com/macros/s/AKfycbztON_impWTkNLtOt8jKbuC2NONVeFP9qEKEB_wroB8S3qRBlA_C_gdYGw9LJF13goN/exec" autocomplete="off">
+                                <input type="date" name="Date" id="date" placeholder="Date" required>&nbsp; 
+                                <select name="Time" id="time" required>
+                                    <option value="11:00">11:00</option>
+                                    <option value="11:30">11:30</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="12:30">12:30</option>
+                                    <option value="1:00">1:00</option>
+                                    <option value="1:30">1:30</option>
+                                    <option value="2:00">2:00</option>
+                                    <option value="2:30">2:30</option>
+                                    <option value="3:00">3:00</option>
+                                    <option value="3:30">3:30</option>
+                                    <option value="4:00">4:00</option>
+                                    <option value="4:30">4:30</option>
+                                    <option value="5:00">5:00</option>
+                                    <option value="5:30">5:30</option>
                                 </select>&nbsp; 
-                                <input type="text" name="pool" id="pool" placeholder="Pool" required>
+                                <input type="text" name="Pool" id="pool" placeholder="Pool" required>
                                 <br><br>
-                                <input type="text" name="lake" id="lake" placeholder="Lodge Lake" required>&nbsp; 
-                                <input type="text" name="beach" id="beach" placeholder="Beach" required>&nbsp; 
+                                <input type="text" name="Lake" id="lake" placeholder="Lodge Lake" required>&nbsp; 
+                                <input type="text" name="Beach" id="beach" placeholder="Beach" required>&nbsp; 
                                 <input type="submit" value="Submit">
                             </form>
                             <br>
@@ -85,7 +85,5 @@
 </html>
 
 <!-- To Do: 
--design of hub
--start building form 
 -test logic of form 
 -->
