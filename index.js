@@ -21,7 +21,8 @@ window.addEventListener("load", function() {
        body: data,
        })
        .then(() => {
-       alert("Success!");
+       alert("Success! Thank you for recording numbers.");
+       document.getElementById("numberform").reset();
        })
    });
    });
