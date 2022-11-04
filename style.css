@@ -250,3 +250,21 @@ body {
         margin-bottom: 15px;
     }
 }
+
+/* Registration */
+#registration {
+    background: #2D4365;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.box {
+    display: inline-block;
+    width: 250px;
+    height: 130px;
+    background-color: #7D9575;
+    padding: 10px;
+    border-radius: 10px;
+}
