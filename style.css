@@ -262,9 +262,23 @@ body {
 
 .box {
     display: inline-block;
-    width: 250px;
+    width: 200px;
     height: 130px;
     background-color: #7D9575;
     padding: 10px;
     border-radius: 10px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media only screen and (max-width: 950px) {
+    .box {
+        margin-top: 20px; 
+    }
 }
