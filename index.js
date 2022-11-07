@@ -6,7 +6,7 @@ function formLogin() {
         document.getElementById("initalStage").style.display = "none";
         document.getElementById("maincontent").style.display = "block";
      } else {
-        alert("Wrong User Credentials. Please try again or contact an offical.");
+        alert("Wrong User Credentials. Please try again or contact an official.");
      }
 }
 
