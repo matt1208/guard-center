@@ -334,3 +334,56 @@ body {
     color: #FFFFFF;
     padding-left: 40px;
 }
+
+/* Updates */
+
+#updates {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.alert {
+    background: #FFE7DC;
+    border-radius: 10px;
+    width: 500px;
+    height: 50px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    /* or 30px */
+
+    letter-spacing: 0.015em;
+
+    color: #000000;
+}
+
+.warning {
+    background: #FDF8EB;
+    border-radius: 10px;
+    width: 500px;
+    height: 50px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    /* or 30px */
+
+    letter-spacing: 0.015em;
+
+    color: #000000;
+}
+
+  /* Responsive */
+  @media only screen and (max-width: 950px) {
+    .alert {
+        width: 350px;
+    }
+    .warning {
+        width: 350px;
+    }
+}
