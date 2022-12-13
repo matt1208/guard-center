@@ -1,7 +1,9 @@
 function formLogin() {
     var pass = "bls";
+    var users = ["blsadmin", "mattvd", "eviep", "kennyc"];
     let userpass = document.forms["login"]["pass"].value;
-     if(userpass === pass) {
+    let username = document.forms["login"]["username"].value;
+     if(userpass === pass && users.includes(username)) {
         // Display will make sure it doesn't still take up space on the page
         document.getElementById("initalStage").style.display = "none";
         document.getElementById("maincontent").style.display = "block";
