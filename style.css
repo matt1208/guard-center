@@ -432,4 +432,7 @@ body {
     width: 100%; 
     height: 600px;
 }
- 
+
+#btnClick:hover {
+    cursor: pointer;
+}
