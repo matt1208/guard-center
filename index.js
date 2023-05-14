@@ -46,3 +46,12 @@ document.onkeydown = function(e) {
       return false;
    }
 }
+
+// Trying to test popup for reminders
+// function myFunction() {
+//    alert("hello!");
+// }
+
+// setInterval(function() {
+//    myFunction()
+// }, 1800000)
