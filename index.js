@@ -1,6 +1,6 @@
 function formLogin() {
     var pass = "bls";
-    var users = ["blsadmin", "mattvd", "eviep", "kennyc", "masonj", "charlied", "jackd"];
+    var users = ["blsadmin", "mattvd", "eviep", "kennyc", "masonj", "charlied", "jackd", "carlieg"];
     let userpass = document.forms["login"]["pass"].value;
     let username = document.forms["login"]["username"].value;
      if(userpass === pass && users.includes(username)) {
