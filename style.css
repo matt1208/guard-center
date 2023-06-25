@@ -436,3 +436,19 @@ body {
 #btnClick:hover {
     cursor: pointer;
 }
+
+  /* Responsive */
+@media only screen and (max-width: 950px) {
+.modal {
+    padding-top: 20px;
+}
+
+.modal-content {
+    width: 75%;
+    height: 800px;
+}
+
+#rosterlist {
+    height: 720px;
+}
+}
